@@ -10,7 +10,7 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            /*//task1 Ввести с консоли N чисел. Вывести сумму, максимальное, минимальное значения,
+            //task1 Ввести с консоли N чисел. Вывести сумму, максимальное, минимальное значения,
             //количество четных чисел, произведение нечетных чисел.      
             int max = 0;
             int min = 0;
@@ -19,6 +19,7 @@ namespace Lesson2
             int count1 = 0; // количество нечетных
             int count2 = 0; // количество четных
             int x = 0;
+            Console.WriteLine("Задание1. Введите количество числе для обработки");
             int n = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < n; i++)
             {
@@ -51,24 +52,25 @@ namespace Lesson2
                 }
             }
             Console.WriteLine(string.Format("sum: {0}, max: {1}, min: {2}, even count: {3}, odd product: {4}", sum, max, min, count2, unit1));
-            Console.ReadLine();*/
+            //Console.ReadLine();
 
             //task2 Ввести с консоли N чисел. Отсортировать. Вывести результат. N - задается с консоли
-            int m = 0;
+            Console.WriteLine("\nЗадание2. Введите количество числе для обработки");
+            int m = Convert.ToInt32(Console.ReadLine());
             int z = 0;
             int[] num = new int[m];
+
             for (int i = 0; i < m; i++)
             {
                 z = Convert.ToInt32(Console.ReadLine());
                 num[i] = z;
             }
             Array.Sort(num);
+            //foreach (int item in num) Console.Write(item + " "); альтернативный способ вывода массива
             for (int i = 0; i < m; i++)
             {
-                Console.WriteLine(num[i]);
-                Console.ReadLine();
+                Console.WriteLine(num[i]);                
             }
-            Console.ReadLine();
 
         }
     }
