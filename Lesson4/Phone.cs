@@ -17,6 +17,17 @@ namespace Lesson4
             _PhoneNumber = phoneNumber;
         }
 
+        public string PhoneNumber
+        {
+            get {return _PhoneNumber;}
+            set
+            {
+                if (value == null)
+                    return;
+                _PhoneNumber = value;
+            }
+        }
+
         public string GetPhone()
         {
             if (_CityCode == string.Empty || _CityCode == null)
