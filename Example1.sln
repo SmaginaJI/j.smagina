@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson1", "Lesson1\Lesson1.csproj", "{365CD9FE-190C-4401-A856-88E66E51A32A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exampl1", "Lesson1\Lesson1.csproj", "{365CD9FE-190C-4401-A856-88E66E51A32A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2", "Lesson2\Lesson2.csproj", "{1EEFD4EB-E1AC-400B-8FF3-BEAC3EFC31C1}"
 EndProject
