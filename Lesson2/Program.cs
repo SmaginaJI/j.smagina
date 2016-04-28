@@ -10,21 +10,8 @@ namespace Lesson2
     {
         static void Main(string[] args)
         {
-            /*int n = Convert.ToInt32(Console.ReadLine());
-            int[] num = new int[n];
-            int x = 0;
-            for (int i = 0; i < n; i++)
-            {
-                x = Convert.ToInt32(Console.ReadLine());
-                num[i] = x;
-            }
-            Array.Sort(num);
-            for (int i = 0; i < n; i++)
-            {
-                Console.WriteLine(num[i]);
-            }
-             
-            task1*/        
+            /*//task1 Ввести с консоли N чисел. Вывести сумму, максимальное, минимальное значения,
+            //количество четных чисел, произведение нечетных чисел.      
             int max = 0;
             int min = 0;
             int sum = 0;
@@ -64,8 +51,25 @@ namespace Lesson2
                 }
             }
             Console.WriteLine(string.Format("sum: {0}, max: {1}, min: {2}, even count: {3}, odd product: {4}", sum, max, min, count2, unit1));
-            //Console.ReadLine();
-            
+            Console.ReadLine();*/
+
+            //task2 Ввести с консоли N чисел. Отсортировать. Вывести результат. N - задается с консоли
+            int m = 0;
+            int z = 0;
+            int[] num = new int[m];
+            for (int i = 0; i < m; i++)
+            {
+                z = Convert.ToInt32(Console.ReadLine());
+                num[i] = z;
+            }
+            Array.Sort(num);
+            for (int i = 0; i < m; i++)
+            {
+                Console.WriteLine(num[i]);
+                Console.ReadLine();
+            }
+            Console.ReadLine();
+
         }
     }
 }
