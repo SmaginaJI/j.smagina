@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example1", "Lesson1\Lesson1.csproj", "{365CD9FE-190C-4401-A856-88E66E51A32A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task1-3", "Lesson1\Task1-3.csproj", "{365CD9FE-190C-4401-A856-88E66E51A32A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson2", "Lesson2\Lesson2.csproj", "{1EEFD4EB-E1AC-400B-8FF3-BEAC3EFC31C1}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4", "Lesson4\Lesson4.csproj", "{4FC4DE86-AA51-419B-8942-BC0E8CE9DFA4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson5", "Lesson5\Lesson5.csproj", "{76276F22-615C-42FE-ABCB-22792B431AAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lesson1_", "Lesson1_", "{9CE20884-5D88-4CC8-9CD2-237F70718FDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{365CD9FE-190C-4401-A856-88E66E51A32A} = {9CE20884-5D88-4CC8-9CD2-237F70718FDB}
 	EndGlobalSection
 EndGlobal
