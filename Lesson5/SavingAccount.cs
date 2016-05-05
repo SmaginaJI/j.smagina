@@ -8,6 +8,9 @@ namespace Lesson5
 {
     class SavingAccount: Account
     {
-
+         public SavingAccount(string lastName, string firstName)
+            : base(lastName, firstName)
+        {
+        }
     }
 }

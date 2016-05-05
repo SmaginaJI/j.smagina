@@ -8,5 +8,9 @@ namespace Lesson5
 {
     class TransactionAccount : Account
     {
+        public TransactionAccount(string lastName, string firstName)
+            : base(lastName, firstName)
+        {
+        }
     }
 }

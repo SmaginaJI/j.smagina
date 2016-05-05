@@ -8,7 +8,7 @@ namespace Lesson5
 {
     class Account
     {
-        public Guid AccountID { get; readonly set; }
+        public Guid AccountID { get; private set; }
         public string Status { get; private set; }
         public string Owner { get; protected set; }
         public decimal Amount { get; protected set; }
@@ -30,16 +30,16 @@ namespace Lesson5
             else return false;
         }
 
-        protected bool DepositMoney(decimal sum)
+        public bool DepositMoney(decimal sum)
         {
-            Amount = Amount + sum;
+            Amount += sum;
             return true;
         }
-        protected bool WithdrawMoney(decimal sum)
+        public bool WithdrawMoney(decimal sum)
         {
             if (Amount >= sum)
             {
-                Amount = Amount - sum;
+                Amount -= sum;
                 return true;
             }
             else return false;

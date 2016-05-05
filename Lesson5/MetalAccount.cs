@@ -8,5 +8,9 @@ namespace Lesson5
 {
     class MetalAccount: Account
     {
+        public MetalAccount(string lastName, string firstName)
+            : base(lastName, firstName)
+        {
+        }
     }
 }

@@ -11,7 +11,26 @@ namespace Lesson5
         protected long clientID;
         protected int phoneNumber;
         protected float orderAmount;
+        List<Account> accounts = new List<Account>();
 
+        public decimal TotalAccountSum
+        {
+            get
+            {
+                decimal sum = 0;
+                for (int i = 0; i < accounts.Count; i++)
+                {
+                   sum += accounts[i].Amount;
+                }
+                return sum;
+            }
+        }
+
+        public void AddAccount(Account account)
+        {
+            accounts.Add(account);
+        }
+            
         public Client(long client, int phone)
         {
             clientID = client;
