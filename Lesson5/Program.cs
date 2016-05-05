@@ -10,6 +10,9 @@ namespace Lesson5
     {
         static void Main(string[] args)
         {
+            IndividualEntreprenuer Person = new IndividualEntreprenuer("Иванов", "Иван", DateTime.Now,1,3562255);
+            Person.OrderAmount = 1022.1F;
+            Console.WriteLine(Person.OrderInformation());
         }
     }
 }

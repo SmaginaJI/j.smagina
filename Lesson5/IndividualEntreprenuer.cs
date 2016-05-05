@@ -20,7 +20,9 @@ namespace Lesson5
             Birthday = birthday;
         }
 
-        // метод вывода данных по клиентам, потом он будет переопределен в дочерних классах
-
+        public override string OrderInformation()
+        {
+            return string.Format("{0} {1}, {2} года рождения, сумма заказа: ", FirstName, LastName, Birthday.Year) + base.OrderInformation();
+        }
     }
 }

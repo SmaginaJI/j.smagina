@@ -8,16 +8,26 @@ namespace Lesson5
 {
     class Client
     {
-        protected long ClientID;
-        protected int Phone;
-        protected float OrderAmount;
+        protected long clientID;
+        protected int phoneNumber;
+        protected float orderAmount;
 
-        public Client(long clientID, int phone)
+        public Client(long client, int phone)
         {
-            ClientID = clientID;
-            Phone = phone;
-            OrderAmount = 0;
+            clientID = client;
+            phoneNumber = phone;
+            orderAmount = 0;
         }
 
+        public float OrderAmount
+        {
+            get { return orderAmount; }
+            set { orderAmount = value; }
+        }
+        
+        public virtual string OrderInformation()
+        {
+            return Convert.ToString(orderAmount);
+        }
     }
 }
