@@ -23,7 +23,9 @@ namespace Task3
                     matrix1[i, j] = randomNumbers.Next();
                     matrix2[i, j] = randomNumbers.Next();
                     matrixSum[i, j] = matrix1[i, j] + matrix2[i, j];
+                    Console.Write(matrixSum[i, j] + " ");
                 }
+                Console.WriteLine();
             }
         }
     }
