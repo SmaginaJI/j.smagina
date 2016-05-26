@@ -69,7 +69,7 @@ namespace Lesson2
             //foreach (int item in num) Console.Write(item + " "); альтернативный способ вывода массива
             for (int i = 0; i < m; i++)
             {
-                Console.WriteLine(num[i]);                
+                Console.Write(num[i]);                
             }
 
         }

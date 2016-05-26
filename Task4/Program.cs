@@ -17,7 +17,7 @@ namespace Task4
             for (int i = 0; i < n; i++)
             {
                 mas[i] = randomNumbers.Next();
-                mas[4] = 555;
+                //mas[4] = 555;
             }
             Console.WriteLine("Введите число");
             int m = Convert.ToInt32(Console.ReadLine());
