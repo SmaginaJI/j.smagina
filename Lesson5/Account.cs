@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson5
 {
-    class Account
+    public class Account
     {
         public Guid AccountID { get; private set; }
         public string Status { get; private set; }

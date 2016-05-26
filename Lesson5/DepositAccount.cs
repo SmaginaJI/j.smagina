@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lesson5
 {
-    class DepositAccount: Account
+    public class DepositAccount: Account
     {
         public DepositAccount(string lastName, string firstName)
             : base(lastName, firstName)
